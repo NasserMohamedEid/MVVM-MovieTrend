@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5861AA342A0040B7009C3F13 /* ViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5861AA332A0040B7009C3F13 /* ViewController+TableView.swift */; };
 		5861AA362A00431E009C3F13 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5861AA352A00431E009C3F13 /* MainViewModel.swift */; };
+		58AD73AA2A273ABA00506E48 /* Observale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AD73A92A273ABA00506E48 /* Observale.swift */; };
 		58B52EA12A1144DB00113C23 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B52EA02A1144DB00113C23 /* NetworkConstant.swift */; };
 		58B52EA32A114FDF00113C23 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B52EA22A114FDF00113C23 /* APICaller.swift */; };
 		58B52EA52A11507000113C23 /* TrendingMoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B52EA42A11507000113C23 /* TrendingMoviesModel.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		5861AA332A0040B7009C3F13 /* ViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+TableView.swift"; sourceTree = "<group>"; };
 		5861AA352A00431E009C3F13 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		58AD73A92A273ABA00506E48 /* Observale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observale.swift; sourceTree = "<group>"; };
 		58B52EA02A1144DB00113C23 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
 		58B52EA22A114FDF00113C23 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		58B52EA42A11507000113C23 /* TrendingMoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMoviesModel.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 		5861AA2D2A003FF1009C3F13 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				58AD73A92A273ABA00506E48 /* Observale.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58AD73AA2A273ABA00506E48 /* Observale.swift in Sources */,
 				5861AA362A00431E009C3F13 /* MainViewModel.swift in Sources */,
 				58C1D07929FF0438002E8945 /* ViewController.swift in Sources */,
 				58C1D07529FF0438002E8945 /* AppDelegate.swift in Sources */,

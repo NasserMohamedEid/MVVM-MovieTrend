@@ -20,17 +20,24 @@
                                 <rect key="frame" x="0.0" y="47" width="390" height="763"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="tOF-xp-XDG">
+                                <rect key="frame" x="176.66666666666666" y="403.66666666666669" width="37" height="37"/>
+                                <color key="color" systemColor="systemGray2Color"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="aXY-aZ-mNh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="F79-UD-Rmh"/>
+                            <constraint firstItem="tOF-xp-XDG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IlZ-ez-tmK"/>
                             <constraint firstItem="aXY-aZ-mNh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OPD-Ms-iYP"/>
+                            <constraint firstItem="tOF-xp-XDG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QVx-hh-3ZH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aXY-aZ-mNh" secondAttribute="bottom" id="U04-P7-8Th"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aXY-aZ-mNh" secondAttribute="trailing" id="fiS-WA-jCc"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndecator" destination="tOF-xp-XDG" id="swg-hV-Cd4"/>
                         <outlet property="tableView" destination="aXY-aZ-mNh" id="Jct-ps-hkB"/>
                     </connections>
                 </viewController>
@@ -42,6 +49,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

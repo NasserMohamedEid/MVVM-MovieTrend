@@ -7,18 +7,35 @@
 
 import Foundation
 class MainViewModel{
+    
+    
+    var isLoading:Observale<Bool>=Observale(false)
+    var cellDataSource:Observale<[Movie]>=Observale(nil)
+    var dataSource:TrendingMovieModel?
     func numberOfSections()->Int{
-    1
+       1
     }
     func numberOfRows(in section:Int)->Int{
-        10
+        self.dataSource?.results.count ?? 0
     }
     func getdata(){
-        APICaller.getTrendingMovie { result in
+        
+        if isLoading.value ?? true{
+            return
+        }
+        
+        isLoading.value=true
+        APICaller.getTrendingMovie { [weak self] result in
+            
+            self?.isLoading.value=false
+            
             switch result{
             case.success(let data ):
                 print(data.results.count)
-                break
+                self?.dataSource=data
+                self?.mapCellData()
+                
+               
                 
             case.failure(let error):
                 print(error)
@@ -27,4 +44,10 @@ class MainViewModel{
             }
         }
     }
+    
+    
+    func mapCellData(){
+        self.cellDataSource.value=self.dataSource?.results ?? []
+    }
+    
 }
